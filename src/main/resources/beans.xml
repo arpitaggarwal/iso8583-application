@@ -1,0 +1,13 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+
+	<bean id="isoMessageFactory" class="com.solab.iso8583.MessageFactory">
+		<property name="assignDate" value="true" />
+		<!-- <property name="etx" value="3" />
+		<property name="ignoreLastMissingField" value="true" /> -->
+		<property name="configPath" value="config.xml" />
+	</bean>
+
+</beans>
